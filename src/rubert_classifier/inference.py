@@ -1,14 +1,20 @@
 """Production inference module."""
 
-from pathlib import Path
+import warnings
 from typing import List, Union
 
 import torch
 import torch.nn.functional as F
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
-from rubert_classifier.config import Config
 from rubert_classifier.model import get_device
+
+# Suppress false-positive warnings from transformers v5.x
+warnings.filterwarnings(
+    "ignore",
+    message=".*incorrect regex pattern.*",
+    category=UserWarning,
+)
 
 
 class Predictor:
@@ -18,16 +24,13 @@ class Predictor:
         self.model_dir = model_dir
         self.device = torch.device(device) if device else get_device()
 
-        # Load config if present
-        cfg_path = Path(model_dir) / "config.json"
-        self.config = Config.load(str(cfg_path)) if cfg_path.exists() else Config()
-
         self.tokenizer = AutoTokenizer.from_pretrained(model_dir)
         self.model = AutoModelForSequenceClassification.from_pretrained(model_dir)
         self.model.to(self.device)
         self.model.eval()
 
-        self.id2label = self.config.id2label if self.config.id2label else self.model.config.id2label
+        # id2label is always available in the model config
+        self.id2label = self.model.config.id2label
 
     @torch.no_grad()
     def predict(self, texts: Union[str, List[str]], max_length: int = 256) -> List[dict]:

@@ -86,7 +86,7 @@ def train_model(
         per_device_eval_batch_size=cfg.per_device_eval_batch_size,
         num_train_epochs=cfg.num_train_epochs,
         weight_decay=cfg.weight_decay,
-        warmup_ratio=cfg.warmup_ratio,
+        warmup_steps=cfg.warmup_ratio,
         eval_strategy="epoch",
         save_strategy="epoch",
         load_best_model_at_end=True,
@@ -96,7 +96,6 @@ def train_model(
         lr_scheduler_type="cosine_with_restarts",
         gradient_accumulation_steps=cfg.gradient_accumulation_steps,
         save_total_limit=cfg.save_total_limit,
-        logging_dir=cfg.logs_dir,
         logging_steps=cfg.logging_steps,
         logging_strategy="steps",
         fp16=torch.cuda.is_available(),
@@ -105,8 +104,6 @@ def train_model(
         seed=cfg.seed,
         label_smoothing_factor=cfg.label_smoothing_factor,
         max_grad_norm=cfg.max_grad_norm,
-        eval_delay=1,
-        save_only_model=True,
     )
 
     data_collator = DataCollatorWithPadding(
@@ -123,7 +120,7 @@ def train_model(
         args=training_args,
         train_dataset=tokenized_train,
         eval_dataset=tokenized_val,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         data_collator=data_collator,
         compute_metrics=build_compute_metrics(cfg.id2label),
         callbacks=[early_stopping, LoggingCallback()],
@@ -138,7 +135,6 @@ def train_model(
     Path(cfg.best_model_dir).mkdir(parents=True, exist_ok=True)
     trainer.save_model(cfg.best_model_dir)
     tokenizer.save_pretrained(cfg.best_model_dir)
-    cfg.save(str(Path(cfg.best_model_dir) / "config.json"))
     print(f"Best model saved to {cfg.best_model_dir}")
 
     return trainer

@@ -1,6 +1,7 @@
 """Preprocessing: balancing and tokenization."""
 
 import random
+import warnings
 from collections import Counter
 from typing import Optional, Tuple
 
@@ -8,6 +9,12 @@ from datasets import Dataset, DatasetDict
 from transformers import AutoTokenizer, PreTrainedTokenizer
 
 from rubert_classifier.config import Config
+
+warnings.filterwarnings(
+    "ignore",
+    message="`max_length` is ignored when `padding`=`True`",
+    category=UserWarning,
+)
 
 
 def balance_dataset(

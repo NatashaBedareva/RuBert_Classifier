@@ -27,10 +27,6 @@ def train(config_path, output_dir, best_model_dir, epochs):
     cfg.num_train_epochs = epochs
 
     train_model(cfg)
-
-    # Evaluate on test
-    print("\nEvaluating on test set...")
-    train_model(cfg)
     click.echo("Training complete.")
 
 
