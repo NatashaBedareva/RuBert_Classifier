@@ -1,0 +1,15 @@
+[flake8]
+max-line-length = 100
+extend-ignore = E203, W503, E501
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    build,
+    dist,
+    *.egg-info,
+    .mypy_cache,
+    .pytest_cache
+per-file-ignores =
+    # E402 — импорт не в начале файла (matplotlib.use перед pyplot)
+    src/rubert_classifier/evaluation.py: E402
