@@ -81,7 +81,6 @@ def train_model(
 
     training_args = TrainingArguments(
         output_dir=cfg.output_dir,
-        overwrite_output_dir=True,
         learning_rate=cfg.learning_rate,
         per_device_train_batch_size=cfg.per_device_train_batch_size,
         per_device_eval_batch_size=cfg.per_device_eval_batch_size,
