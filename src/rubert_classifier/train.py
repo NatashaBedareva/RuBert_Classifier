@@ -6,7 +6,6 @@ from typing import Optional
 
 import numpy as np
 import torch
-from datasets import DatasetDict
 from sklearn.metrics import f1_score
 from transformers import (
     DataCollatorWithPadding,
@@ -17,9 +16,8 @@ from transformers import (
 )
 
 from rubert_classifier.config import Config
-from rubert_classifier.data import load_sib200_dataset
+from rubert_classifier.data import get_training_datasets   # ← единственный импорт данных
 from rubert_classifier.model import create_model
-from rubert_classifier.preprocessing import prepare_datasets
 
 
 class LoggingCallback(TrainerCallback):
@@ -56,26 +54,15 @@ def build_compute_metrics(id2label: dict):
     return compute_metrics
 
 
-def train_model(
-    cfg: Optional[Config] = None,
-    dataset: Optional[DatasetDict] = None,
-) -> Trainer:
+def train_model(cfg: Optional[Config] = None) -> Trainer:
     """Full training pipeline."""
     if cfg is None:
         cfg = Config()
 
     _seed_everything(cfg.seed)
 
-    if dataset is None:
-        dataset = load_sib200_dataset(cfg)
-    elif not cfg.list_of_categories:
-        categories = sorted(set(dataset["train"]["category"]))
-        cfg.list_of_categories = categories
-        cfg.num_labels = len(categories)
-        cfg.id2label = {i: c for i, c in enumerate(categories)}
-        cfg.label2id = {c: i for i, c in enumerate(categories)}
-
-    tokenized_train, tokenized_val, tokenized_test, tokenizer = prepare_datasets(dataset, cfg)
+    # Preprocessing is inside of get_training_datasets()
+    tokenized_train, tokenized_val, tokenized_test, tokenizer = get_training_datasets(cfg)
 
     model = create_model(cfg)
 
