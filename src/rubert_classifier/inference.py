@@ -20,7 +20,7 @@ warnings.filterwarnings(
 class Predictor:
     """Ready-to-use inference class."""
 
-    def __init__(self, model_dir: str, device: str = None):
+    def __init__(self, model_dir: str, device: str | None = None):
         self.model_dir = model_dir
         self.device = torch.device(device) if device else get_device()
 
