@@ -3,18 +3,18 @@ revision = 5
 requires-python = ">=3.9"
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
-    "python_full_version == '3.10.*' and sys_platform != 'win32'",
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
+    "python_full_version == '3.10.*' and sys_platform != 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 
@@ -24,8 +24,8 @@ version = "1.10.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -49,14 +49,14 @@ version = "1.15.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -82,8 +82,8 @@ version = "2.6.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/26/30/f84a107a9c4331c14b2b586036f40965c128aa4fee4dda5d3d51cb14ad54/aiohappyeyeballs-2.6.1.tar.gz", hash = "sha256:c3f9d0113123803ccadfdf3f0faa505bc78e6a72d1cc4806cbd719826e943558" }
@@ -97,14 +97,14 @@ version = "2.7.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ce/f4/eec0465c2f67b2664688d0240b3212d5196fd89e741df67ddb81f8d35658/aiohappyeyeballs-2.7.1.tar.gz", hash = "sha256:065665c041c42a5938ed220bdcd7230f22527fbec085e1853d2402c8a3615d9d" }
@@ -118,8 +118,8 @@ version = "3.13.5"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -261,14 +261,14 @@ version = "3.14.5"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -478,8 +478,8 @@ version = "5.3.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -496,14 +496,14 @@ version = "5.4.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -529,8 +529,8 @@ version = "0.7.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz", hash = "sha256:aff07c09a53a08bc8cfccb9c85b05f1aa9a2a6f23728d790723543408344ce89" }
@@ -544,14 +544,14 @@ version = "0.8.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/5f/56/a8120250d128bed162cd73c76d45f6ef9991f3e068f62a8ee060afa3104a/annotated_types-0.8.0.tar.gz", hash = "sha256:13b2beaad985e05e2d6407ee4c4f35590b11f8d693a258a561055cac8f64cab7" }
@@ -571,8 +571,8 @@ version = "4.12.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -591,14 +591,14 @@ version = "4.15.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -699,8 +699,8 @@ version = "2.21.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -719,14 +719,14 @@ version = "2.24.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -744,8 +744,8 @@ version = "6.0.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/8c/78/a7c9b6d6581353204a7a099567783dd3352405b1662988892b9e67039c6c/atpublic-6.0.2.tar.gz", hash = "sha256:f90dcd17627ac21d5ce69e070d6ab89fb21736eb3277e8b693cc8484e1c7088c" }
@@ -772,12 +772,12 @@ version = "9.0.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/08/3f/23b2643edfae61210baee60eec95873a4ad4fc6a7c096a725f240a0bf4db/atpublic-9.0.0.tar.gz", hash = "sha256:61ea62d8445d2aaa83b6dffaa3d90f99fcec10e16683ee9b13792cdcdafa0966" }
@@ -800,8 +800,8 @@ version = "4.2.4"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/58/23/b12ac0bcdfb7360d664f40a00b1bda139cbbbced012c34e375506dbd0143/billiard-4.2.4.tar.gz", hash = "sha256:55f542c371209e03cd5862299b74e52e4fbcba8250ba611ad94276b369b6a85f" }
@@ -815,14 +815,14 @@ version = "4.3.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ea/0d/8921e960be19fa226358bf933509f57ec679d9b35a1e7ea43460af4b7fef/billiard-4.3.1.tar.gz", hash = "sha256:c88559b306ee5dc93f8d5f843d07da15d795d67af26720d14ee9d09f09eb0b22" }
@@ -836,8 +836,8 @@ version = "25.11.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -885,14 +885,14 @@ version = "26.10.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -975,8 +975,8 @@ version = "2.0.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -1075,14 +1075,14 @@ version = "2.1.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -1197,8 +1197,8 @@ version = "3.4.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/11/74/539e56497d9bd1d484fd863dd69cbbfa653cd2aa27abfe35653494d85e94/cfgv-3.4.0.tar.gz", hash = "sha256:e52591d4c5f5dead8e0f673fb16db7949d2cfb3f7da4582893288f0ded8fe560" }
@@ -1212,14 +1212,14 @@ version = "3.5.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/4e/b5/721b8799b04bf9afe054a3899c6cf4e880fcf8563cc71c15610242490a0c/cfgv-3.5.0.tar.gz", hash = "sha256:d5b1034354820651caa73ede66a6294d6e95c1b00acc5e9b098e917404669132" }
@@ -1412,8 +1412,8 @@ version = "8.1.8"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -1430,14 +1430,14 @@ version = "8.5.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/c7/0e/7fa0ef50764b67090eca4114772a2abf8b6148198475e54c660b97caeee6/click-8.5.0.tar.gz", hash = "sha256:ba0d2089de75ea0310e2dde03160e6ca10009947fb95a182f9b54021bb272e34" }
@@ -1520,8 +1520,8 @@ version = "1.3.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -1758,10 +1758,10 @@ version = "1.4.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -1846,8 +1846,8 @@ version = "7.10.7"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/51/26/d22c300112504f5f9a9fd2297ce33c35f3d353e4aeb987c8419453b2a7c2/coverage-7.10.7.tar.gz", hash = "sha256:f4ab143ab113be368a3e9b795f9cd7906c5ef407d6173fe9675a902e1fffc239" }
@@ -1968,14 +1968,14 @@ version = "7.16.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/2f/55/d1eaf3e73781174340a00dc1ba2aee8a65f82fadb18e2797b192b6b3925b/coverage-7.16.2.tar.gz", hash = "sha256:ca64d9f1f384f151b9511bec01126072acd2f313439f8ed015a22d8790aab6fa" }
@@ -2177,16 +2177,16 @@ version = "50.0.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
-    "python_full_version == '3.10.*' and sys_platform != 'win32'",
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
+    "python_full_version == '3.10.*' and sys_platform != 'win32'",
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -2354,8 +2354,8 @@ version = "4.5.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -2385,14 +2385,14 @@ version = "5.1.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -2434,8 +2434,8 @@ version = "0.4.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/12/80/630b4b88364e9a8c8c5797f4602d0f76ef820909ee32f0bacb9f90654042/dill-0.4.0.tar.gz", hash = "sha256:0633f1d2df477324f53a895b02c901fb961bdbf65a17122586ea7019292cbcf0" }
@@ -2449,14 +2449,14 @@ version = "0.4.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/81/e1/56027a71e31b02ddc53c7d65b01e68edf64dea2932122fe7746a516f75d5/dill-0.4.1.tar.gz", hash = "sha256:423092df4182177d4d8ba8290c8a5b640c66ab35ec7da59ccfa00f6fa3eea5fa" }
@@ -2506,8 +2506,8 @@ version = "0.24.10"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -2554,14 +2554,14 @@ version = "1.2.17"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -2845,8 +2845,8 @@ version = "3.19.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/40/bb/0ab3e58d22305b6f5440629d20683af28959bf793d98d11950e305c1c326/filelock-3.19.1.tar.gz", hash = "sha256:66eda1888b0171c998b35be2bcc0f6d75c388a7ce20c3f3f37aa8e96c2dddf58" }
@@ -2873,12 +2873,12 @@ version = "4.2.4"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/d8/28/3893324bcadf8f89b1616637468d766af3f625008c0735bf704fdfa86617/filelock-4.2.4.tar.gz", hash = "sha256:c6d8663535e1650ee430507b4ffbac7b464dd64b7647ea0112a9f406499d163d" }
@@ -2892,8 +2892,8 @@ version = "7.3.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -2912,14 +2912,14 @@ version = "7.4.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -2938,8 +2938,8 @@ version = "0.4.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -2956,14 +2956,14 @@ version = "0.5.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/0b/d0/34bf1bafa4d54e4ec20ca40856e991ffe7fdfd53831a2a36a7eb356508c8/flatten_dict-0.5.0.tar.gz", hash = "sha256:ca89664d0bc9552d525ee756726b5a755c17f65b5bf23d0a1f07841f181428b7" }
@@ -2977,8 +2977,8 @@ version = "8.2.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -2996,14 +2996,14 @@ version = "9.2.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -3022,8 +3022,8 @@ version = "4.60.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/3e/c4/db6a7b5eb0656534c3aa2596c2c5e18830d74f1b9aa5aa8a7dff63a0b11d/fonttools-4.60.2.tar.gz", hash = "sha256:d29552e6b155ebfc685b0aecf8d429cb76c14ab734c22ef5d3dea6fdf800c92c" }
@@ -3170,12 +3170,12 @@ version = "4.67.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/94/36/102e180f8f5dbaee88b26595b01ca8aa80bf4e62128d9aa94265b3996c96/fonttools-4.67.0.tar.gz", hash = "sha256:3cb57e6600ca77c0b1729cf8adc23bc0652633a37f18cfa934d9c7bc3de25519" }
@@ -3382,8 +3382,8 @@ version = "2025.10.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/24/7f/2747c0d332b9acfa75dc84447a066fdf812b5a6b8d30472b74d309bfe8cb/fsspec-2025.10.0.tar.gz", hash = "sha256:b6789427626f068f9a83ca4e8a3cc050850b6c0f71f99ddb4f542b8266a26a59" }
@@ -3405,14 +3405,14 @@ version = "2026.7.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/00/78/f34251dadb8f3921264a1d9b8946f5e542014ee2614b285261b4e40e6775/fsspec-2026.7.0.tar.gz", hash = "sha256:c803c40f4cf860b49dea58ee3e1c33cb9c790520e233537e1340049f89b82a88" }
@@ -3480,8 +3480,8 @@ version = "1.9.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -3507,14 +3507,14 @@ version = "1.10.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -3604,12 +3604,12 @@ version = "2.15.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -3662,12 +3662,12 @@ version = "2.15.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -3698,8 +3698,8 @@ version = "0.36.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -3723,14 +3723,14 @@ version = "2.2.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -3772,8 +3772,8 @@ version = "2.6.15"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ff/e7/685de97986c916a6d93b3876139e00eef26ad5bbbd61925d670ae8013449/identify-2.6.15.tar.gz", hash = "sha256:e4f4864b96c6557ef2a1e1c951771838f4edc9df3a72ec7118b338801b11c7bf" }
@@ -3787,14 +3787,14 @@ version = "2.6.20"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/53/35/d70c0006c7cee65999ea94a6273e60b2094f600a3d8b71b04318253fc643/identify-2.6.20.tar.gz", hash = "sha256:ad729860a923858d26917c2f4fb0a1d83d27a75b1e090c06440c573f048f3285" }
@@ -3817,8 +3817,8 @@ version = "0.12.4"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -3839,14 +3839,14 @@ version = "0.14.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -3897,8 +3897,8 @@ version = "2.1.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/f2/97/ebf4da567aa6827c909642694d71c9fcf53e5b504f2d96afea02718862f3/iniconfig-2.1.0.tar.gz", hash = "sha256:3abbd2e30b36733fee78f9c7f7308f2d0050e88f0087fd25c2645f63c773e1c7" }
@@ -3912,14 +3912,14 @@ version = "2.3.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/01/e1/2069291243c926a2ff1cd706c7f3eeb9b62144bf60f77c9fb9ff2fb26bd3/iniconfig-2.3.1.tar.gz", hash = "sha256:67f4b9c50da0dedf52af349e7749a80a9057a5031199791b906c3bb3ae878960" }
@@ -3933,8 +3933,8 @@ version = "6.1.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -3951,14 +3951,14 @@ version = "9.0.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -4040,8 +4040,8 @@ version = "1.5.3"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/41/f2/d34e8b3a08a9cc79a50b2208a93dce981fe615b64d5a4d4abee421d898df/joblib-1.5.3.tar.gz", hash = "sha256:8561a3269e6801106863fd0d6d84bb737be9e7631e33aaed3fb9ce5953688da3" }
@@ -4055,14 +4055,14 @@ version = "1.6.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -4079,8 +4079,8 @@ version = "1.4.7"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/85/4d/2255e1c76304cbd60b48cee302b66d1dde4468dc5b1160e4b7cb43778f2a/kiwisolver-1.4.7.tar.gz", hash = "sha256:9893ff81bd7107f7b685d3017cc6583daadb4fc26e4a888350df530e41980a60" }
@@ -4185,14 +4185,14 @@ version = "1.5.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ba/07/bd78e6a8fae171ea041ef5bba3ed21a003522fa088834b069b1909981f30/kiwisolver-1.5.1.tar.gz", hash = "sha256:f1303ef2eec81262a4b708c3e858afe58d7c75ad91c1c05266eda7673369859a" }
@@ -4505,8 +4505,8 @@ version = "3.0.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -4523,14 +4523,14 @@ version = "4.2.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -4705,8 +4705,8 @@ version = "3.9.4"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -4848,12 +4848,12 @@ version = "3.11.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -4958,8 +4958,8 @@ version = "6.7.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -5120,14 +5120,14 @@ version = "7.1.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -5313,8 +5313,8 @@ version = "0.70.18"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -5345,14 +5345,14 @@ version = "0.70.19"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -5383,8 +5383,8 @@ version = "1.19.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -5441,14 +5441,14 @@ version = "2.4.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -5538,8 +5538,8 @@ version = "3.2.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/c4/80/a84676339aaae2f1cfdf9f418701dd634aef9cc76f708ef55c36ff39c3ca/networkx-3.2.1.tar.gz", hash = "sha256:9f1bb5cf3409bf324e0a722c20bdb4c20ee39bf1c30ce8ae499c8502b0b5e0c6" }
@@ -5579,10 +5579,10 @@ version = "3.7"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/dc/76/3af777226b63a5e64a6b36b1ec5855c14e2b94a37096d4760e595fc43511/networkx-3.7.tar.gz", hash = "sha256:fd77a511bd90f39f3d016351345b52cf5319b813bdca01de3f755d3cca62e96a" }
@@ -5605,8 +5605,8 @@ version = "2.0.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/a9/75/10dd1f8116a8b796cb2c737b674e02d02e80454bda953fa7e65d8c12b016/numpy-2.0.2.tar.gz", hash = "sha256:883c987dee1880e2a864ab0dc9892292582510604156762362d9326444636e78" }
@@ -5812,10 +5812,10 @@ version = "2.5.4"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/95/b0/c7453d0b6e2073c3264468b106ee1563750cecc910965e67357e3698c83e/numpy-2.5.4.tar.gz", hash = "sha256:9a94cf751c9ad8ebaa835bcd3d40dacf8534ad086b88c38029b65123c7999d2a" }
@@ -6184,8 +6184,8 @@ version = "3.11.5"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/04/b8/333fdb27840f3bf04022d21b654a35f58e15407183aeb16f3b41aa053446/orjson-3.11.5.tar.gz", hash = "sha256:82393ab47b4fe44ffd0a7659fa9cfaacc717eb617c93cde83795f14af5c2e9d5" }
@@ -6284,14 +6284,14 @@ version = "3.13.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/f2/72/380b97dc45bd162d23afe5194721ef678d9eac7cfaa549fe2873f7f0a518/orjson-3.13.0.tar.gz", hash = "sha256:d1de5eb04485110c5da4c657e49168995d55e076b1ce60f1a042e254f4186c4f" }
@@ -6371,10 +6371,10 @@ version = "2.3.3"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
-    "python_full_version == '3.10.*' and sys_platform != 'win32'",
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version == '3.10.*' and sys_platform != 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -6448,12 +6448,12 @@ version = "3.0.6"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -6538,8 +6538,8 @@ version = "11.3.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/f3/0d/d0d6dea55cd152ce3d6767bb38a8fc10e33796ba4ba210cbab9354b6d238/pillow-11.3.0.tar.gz", hash = "sha256:3828ee7586cd0b2091b6209e5ad53e20d0649bbe87164a459d0676e035e8f523" }
@@ -6755,12 +6755,12 @@ version = "13.0.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ce/a4/9cc30690a394a8305e8be4c9036aa16d0dfddadd09079860b582f562496d/pillow-13.0.0.tar.gz", hash = "sha256:cdcd1ba258178f7356d74170c9a81ba4eab6a5d55748bc402a5a2a6fe6be3510" }
@@ -6855,8 +6855,8 @@ version = "4.4.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/23/e8/21db9c9987b0e728855bd57bff6984f67952bea55d6f75e055c46b5383e8/platformdirs-4.4.0.tar.gz", hash = "sha256:ca753cf4d81dc309bc67b0ea38fd15dc97bc30ce419a7f58d13eb3bf14c4febf" }
@@ -6883,12 +6883,12 @@ version = "4.13.5"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/58/e6/d0abbb256b44e6a05748c6942511ff67db8dbb068de0c35b24bf1b395b09/platformdirs-4.13.5.tar.gz", hash = "sha256:05831adf87d392760f4b5c3a0a95579ab5a10b18b9b9bd43680dcb47544788a0" }
@@ -6902,8 +6902,8 @@ version = "1.6.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/f9/e2/3e91f31a7d2b083fe6ef3fa267035b518369d9511ffab804f839851d2779/pluggy-1.6.0.tar.gz", hash = "sha256:7dcc130b76258d33b90f61b658791dede3486c3e6bfb003ee5c9bfb396dd22f3" }
@@ -6917,14 +6917,14 @@ version = "1.7.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/bf/db/7fc19e6f2dc92a966727031389fc2e08b558f0f25eb7403c1119ad4713cd/pluggy-1.7.0.tar.gz", hash = "sha256:d1eaa46ebb595891b860ab086b4d09c8588af65ebd4361b8e8f4bb8920b90ba8" }
@@ -6938,8 +6938,8 @@ version = "4.3.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -6980,12 +6980,12 @@ version = "4.7.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -7006,8 +7006,8 @@ version = "3.0.52"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -7024,14 +7024,14 @@ version = "3.0.53"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -7048,8 +7048,8 @@ version = "0.4.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/9e/da/e9fc233cf63743258bff22b3dfa7ea5baef7b5bc324af47a0ad89b8ffc6f/propcache-0.4.1.tar.gz", hash = "sha256:f48107a8c637e80362555f37ecf49abe20370e557cc4ab374f04ec4423c97c3d" }
@@ -7183,14 +7183,14 @@ version = "0.5.4"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/b3/9a/9fbf4e4ec0c2d7f1c32519fff782ef467859b8faa9fbc5331a96f6395d43/propcache-0.5.4.tar.gz", hash = "sha256:ff6b113f50bc066a698db5d944d2c6dc7507168dd3341e255a8892fd0715a558" }
@@ -7368,8 +7368,8 @@ version = "21.0.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ef/c2/ea068b8f00905c06329a3dfcd40d0fcc2b7d0f2e355bdb25b65e0a0e4cd4/pyarrow-21.0.0.tar.gz", hash = "sha256:5051f2dccf0e283ff56335760cbc8622cf52264d67e359d5569541ac11b6d5bc" }
@@ -7478,12 +7478,12 @@ version = "26.0.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ec/34/17c34cb38e5d940e38f0f0d9fdfa0e8a506676409ea9b85aff7e3079f831/pyarrow-26.0.0.tar.gz", hash = "sha256:0cccd36e00ea3afeb52ded61f2721ce71f604853d70c45365c58324eb773d6ae" }
@@ -7545,8 +7545,8 @@ version = "2.14.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/11/e0/abfd2a0d2efe47670df87f3e3a0e2edda42f055053c85361f19c0e2c1ca8/pycodestyle-2.14.0.tar.gz", hash = "sha256:c4b5b517d278089ff9d0abdec919cd97262a3367449ea1c8b49b91529167b783" }
@@ -7560,14 +7560,14 @@ version = "2.15.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/86/df/178e41c9ed0ff33c23b3f3757e4e658c889f9abc5ad76ece6cd607b12e9c/pycodestyle-2.15.0.tar.gz", hash = "sha256:318f5db083869b4c4dad922d0b11124fb27ab181b6730b93371da671e31bd50e" }
@@ -7581,8 +7581,8 @@ version = "2.23"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/fe/cf/d2d3b9f5699fb1e4615c8e32ff220203e43b248e1dfcc6736ad9057731ca/pycparser-2.23.tar.gz", hash = "sha256:78816d4f24add8f10a06d6f05b4d424ad9e96cfebf68a4ddc99c65c0720d00c2" }
@@ -7596,14 +7596,14 @@ version = "3.11"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/da/a8/c5fdbeee588bb8ada9458774f43adf1bdd30bd59157055142183e769a024/pycparser-3.11.tar.gz", hash = "sha256:d875f09c3507d00e1aba0eecc6dcadc1352f30fff09dc6bff2f1c2935e97c2bc" }
@@ -7617,8 +7617,8 @@ version = "2.13.5"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -7638,14 +7638,14 @@ version = "2.14.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -7665,8 +7665,8 @@ version = "2.46.5"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -7801,14 +7801,14 @@ version = "2.50.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -7960,8 +7960,8 @@ version = "2.11.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -7998,12 +7998,12 @@ version = "2.16.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -8035,8 +8035,8 @@ version = "3.4.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/45/dc/fd034dc20b4b264b3d015808458391acbf9df40b1e54750ef175d39180b1/pyflakes-3.4.0.tar.gz", hash = "sha256:b24f96fafb7d2ab0ec5075b7350b3d2d2218eab42003821c06344973d3ea2f58" }
@@ -8050,14 +8050,14 @@ version = "4.0.3"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/2c/1b/3ba8bd62723cfe1b651c4e4b89b33767fce7a08bb800491cf1d3dd3a7716/pyflakes-4.0.3.tar.gz", hash = "sha256:94762a3a5a343a79b28754f96c554bce057a592a4896907d73f0369fe824e053" }
@@ -8071,8 +8071,8 @@ version = "1.15.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -8167,12 +8167,12 @@ version = "1.20.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -8262,10 +8262,10 @@ version = "2.5.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
-    "python_full_version == '3.10.*' and sys_platform != 'win32'",
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version == '3.10.*' and sys_platform != 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/b9/13/55deec25bf09383216fa7f1dfcdbfca40a04aa00b6d15a5cbf25af8fce5f/pygtrie-2.5.0.tar.gz", hash = "sha256:203514ad826eb403dab1d2e2ddd034e0d1534bbe4dbe0213bb0593f66beba4e2" }
@@ -8279,12 +8279,12 @@ version = "2.6.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ff/06/31cf0821ada10cb65be108388ddf08d6c6990af90369db26b86776c3e86c/pygtrie-2.6.2.tar.gz", hash = "sha256:879264597743ef52bf80f2dff085364088c0848ae22544db95dad2bf52e06471" }
@@ -8307,8 +8307,8 @@ version = "8.4.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -8331,14 +8331,14 @@ version = "9.1.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -8404,8 +8404,8 @@ version = "1.2.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/f0/26/19cadc79a718c5edbec86fd4919a6b6d3f681039a2f6d66d14be94e75fb9/python_dotenv-1.2.1.tar.gz", hash = "sha256:42667e897e16ab0d66954af0e60a9caa94f0fd4ecf3aaf6d2d260eec1aa36ad6" }
@@ -8419,14 +8419,14 @@ version = "1.2.4"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/74/26/2fbeedb218a787a5eea551c7532cac4e009f83d689dd2faa0d0353473f86/python_dotenv-1.2.4.tar.gz", hash = "sha256:f0d53e69935a851c0dcc78f3ab7aaccd8cabef0b92382b576b824212902873c0" }
@@ -8594,8 +8594,8 @@ version = "2026.1.15"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/0b/86/07d5056945f9ec4590b518171c4254a5925832eb727b56d3c38a7476f316/regex-2026.1.15.tar.gz", hash = "sha256:164759aa25575cbc0651bef59a0b18353e54300d79ace8084c818ad8ac72b7d5" }
@@ -8738,14 +8738,14 @@ version = "2026.9.29"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/fc/f2/af1da9d3ceed77bfcdce40427d49ba0be94e4fe84245e3bfef68c10e75b6/regex-2026.9.29.tar.gz", hash = "sha256:8b5fcc4771732191b2b7d1dd68d8f0353f47f8d90b6150f6dce58bf1112442cb" }
@@ -8887,8 +8887,8 @@ version = "2.32.5"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -8908,14 +8908,14 @@ version = "2.34.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -8989,7 +8989,7 @@ dependencies = [
     { name = "transformers", version = "5.20.2", source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }, marker = "python_full_version >= '3.10'" },
 ]
 
-[package.optional-dependencies]
+[package.dev-dependencies]
 dev = [
     { name = "black", version = "25.11.0", source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }, marker = "python_full_version < '3.10'" },
     { name = "black", version = "26.10.1", source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }, marker = "python_full_version >= '3.10'" },
@@ -9010,21 +9010,14 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "accelerate", specifier = ">=1.1.0" },
-    { name = "black", marker = "extra == 'dev'", specifier = ">=23.9.0" },
     { name = "click", specifier = ">=8.1.0" },
     { name = "datasets", specifier = ">=2.14.0" },
     { name = "dvc", specifier = ">=3.0" },
     { name = "evaluate", specifier = ">=0.4.0" },
-    { name = "flake8", marker = "extra == 'dev'", specifier = ">=6.1.0" },
     { name = "imbalanced-learn", specifier = ">=0.11.0" },
-    { name = "isort", marker = "extra == 'dev'", specifier = ">=5.12.0" },
     { name = "matplotlib", specifier = ">=3.7.0" },
-    { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.5.0" },
     { name = "numpy", specifier = ">=1.24.0" },
     { name = "pandas", specifier = ">=2.0.0" },
-    { name = "pre-commit", marker = "extra == 'dev'", specifier = ">=3.4.0" },
-    { name = "pytest", marker = "extra == 'dev'", specifier = ">=7.4.0" },
-    { name = "pytest-cov", marker = "extra == 'dev'", specifier = ">=4.1.0" },
     { name = "pyyaml", specifier = ">=6.0" },
     { name = "scikit-learn", specifier = ">=1.3.0" },
     { name = "seaborn", specifier = ">=0.12.0" },
@@ -9033,7 +9026,17 @@ requires-dist = [
     { name = "tqdm", specifier = ">=4.65.0" },
     { name = "transformers", specifier = ">=4.50.0" },
 ]
-provides-extras = ["dev"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "black", specifier = ">=23.9.0" },
+    { name = "flake8", specifier = ">=6.1.0" },
+    { name = "isort", specifier = ">=5.12.0" },
+    { name = "mypy", specifier = ">=1.5.0" },
+    { name = "pre-commit", specifier = ">=3.4.0" },
+    { name = "pytest", specifier = ">=7.4.0" },
+    { name = "pytest-cov", specifier = ">=4.1.0" },
+]
 
 [[package]]
 name = "safetensors"
@@ -9041,8 +9044,8 @@ version = "0.7.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/29/9c/6e74567782559a63bd040a236edca26fd71bc7ba88de2ef35d75df3bca5e/safetensors-0.7.0.tar.gz", hash = "sha256:07663963b67e8bd9f0b8ad15bb9163606cd27cc5a1b96235a50d8369803b96b0" }
@@ -9077,14 +9080,14 @@ version = "0.8.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/45/06/f955dbbb1859e3bd23c8ac6141af5106e7ad5fedec4a3a6e3d60f94b7001/safetensors-0.8.0.tar.gz", hash = "sha256:fabaf3e0f18a6618d9b36560682562157f77c2b71fcffc7b432be2baed9d753d" }
@@ -9113,8 +9116,8 @@ version = "1.6.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -9210,12 +9213,12 @@ version = "1.9.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -9279,8 +9282,8 @@ version = "1.13.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -9455,10 +9458,10 @@ version = "1.18.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -9581,8 +9584,8 @@ version = "3.0.4"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/72/d1/d3159231aec234a59dd7d601e9dd9fe96f3afff15efd33c1070019b26132/semver-3.0.4.tar.gz", hash = "sha256:afc7d8c584a5ed0a11033af086e8af226a9c0b206f313e0301f8dd7b6b589602" }
@@ -9596,14 +9599,14 @@ version = "3.1.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/92/f5/e1dfe8e1d91c54ce212fd93916eb01fd1c590f413be0a0978c39a97aa1bb/semver-3.1.0.tar.gz", hash = "sha256:14bc073439513d7773662a338f4db9829cf16c12b74b9568e2d2689975fbd7fc" }
@@ -9617,8 +9620,8 @@ version = "82.0.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/4f/db/cfac1baf10650ab4d1c111714410d2fbb77ac5a616db26775db562c8fab2/setuptools-82.0.1.tar.gz", hash = "sha256:7d872682c5d01cfde07da7bccc7b65469d3dca203318515ada1de5eda35efbf9" }
@@ -9632,14 +9635,14 @@ version = "84.0.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/6d/44/f5da03a8ef95d369145c5bb53050e7877c9f3d312e128605fd9504829143/setuptools-84.0.0.tar.gz", hash = "sha256:f4695c21257f0d9b537ec2692c941d02ee143b7cc1276941349a546573b2ef73" }
@@ -9769,8 +9772,8 @@ version = "0.9.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/ec/fe/802052aecb21e3797b8f7902564ab6ea0d60ff8ca23952079064155d1ae1/tabulate-0.9.0.tar.gz", hash = "sha256:0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c" }
@@ -9784,14 +9787,14 @@ version = "0.10.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/46/58/8c37dea7bbf769b20d58e7ace7e5edfe65b849442b00ffcdd56be88697c6/tabulate-0.10.0.tar.gz", hash = "sha256:e2cfde8f79420f6deeffdeda9aaec3b6bc5abce947655d17ac662b126e48a60d" }
@@ -9814,8 +9817,8 @@ version = "0.22.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -9854,14 +9857,14 @@ version = "0.23.3"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -10132,8 +10135,8 @@ version = "4.57.6"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -10159,14 +10162,14 @@ version = "5.20.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -10248,8 +10251,8 @@ version = "0.23.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -10269,14 +10272,14 @@ version = "0.27.3"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -10305,8 +10308,8 @@ version = "0.4.2"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -10323,14 +10326,14 @@ version = "0.4.4"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -10356,8 +10359,8 @@ version = "5.3.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -10374,14 +10377,14 @@ version = "5.4.4"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -10398,8 +10401,8 @@ version = "2.6.3"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/c7/24/5f1b3bdffd70275f6661c76461e25f024d5a38a46f04aaca912426a2b1d3/urllib3-2.6.3.tar.gz", hash = "sha256:1b62b6884944a57dbe321509ab94fd4d3b307075e0c2eae991ac71ee15ad38ed" }
@@ -10413,14 +10416,14 @@ version = "2.8.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 sdist = { url = "https://mirrors.aliyun.com/pypi/packages/e3/05/b17359e1cefb4f909b5e40b1b90a496d987258916dbbf88e842c729f510e/urllib3-2.8.0.tar.gz", hash = "sha256:63bf2ead4c879426ebf22ef2a781eeb4aa3b4ae798a0435506f8687fd5bb9b63" }
@@ -10740,8 +10743,8 @@ version = "1.22.0"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform == 'win32'",
-    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform == 'win32'",
+    "python_full_version > '3.9' and python_full_version < '3.10' and sys_platform != 'win32'",
     "python_full_version <= '3.9' and sys_platform != 'win32'",
 ]
 dependencies = [
@@ -10888,14 +10891,14 @@ version = "1.25.1"
 source = { registry = "https://mirrors.aliyun.com/pypi/simple/" }
 resolution-markers = [
     "python_full_version >= '3.15' and sys_platform == 'win32'",
-    "python_full_version >= '3.15' and sys_platform != 'win32'",
     "python_full_version == '3.14.*' and sys_platform == 'win32'",
-    "python_full_version == '3.14.*' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
     "python_full_version == '3.11.*' and sys_platform == 'win32'",
-    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform == 'win32'",
+    "python_full_version >= '3.15' and sys_platform != 'win32'",
+    "python_full_version == '3.14.*' and sys_platform != 'win32'",
+    "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'win32'",
+    "python_full_version == '3.11.*' and sys_platform != 'win32'",
     "python_full_version == '3.10.*' and sys_platform != 'win32'",
 ]
 dependencies = [
