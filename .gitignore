@@ -20,3 +20,5 @@ logs/
 .idea/
 .vscode/
 input.txt
+.venv/
+.backup/

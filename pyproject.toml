@@ -27,6 +27,7 @@ dependencies = [
     "tqdm>=4.65.0",
     "click>=8.1.0",
     "pyyaml>=6.0",
+    "dvc>=3.0",
 ]
 
 [project.optional-dependencies]
@@ -38,7 +39,6 @@ dev = [
     "isort>=5.12.0",
     "flake8>=6.1.0",
     "mypy>=1.5.0",
-    "dvc>=3.0",
 ]
 
 [project.scripts]
@@ -46,6 +46,16 @@ rubert-clf = "rubert_classifier.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu124", marker = "sys_platform == 'win32'" },
+]
 
 [tool.black]
 line-length = 100
