@@ -97,7 +97,8 @@ def _load_sib200_dataset(
     return dataset
 
 
-# ----------- Public API -------------------------------------- 
+# ----------- Public API --------------------------------------
+
 
 def get_training_datasets(cfg: Config) -> Tuple:
     """

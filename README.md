@@ -49,10 +49,10 @@ If `dvc pull` fails because the remote is empty (fresh project), the loader will
 
 ### What is tracked
 
-| Artifact | Path | Tracked by |
-|---|---|---|
-| Dataset (Sib200, Russian) | `data/sib200_rus/` | `data/sib200_rus.dvc` |
-| Best fine-tuned model (in process) | `best_model/` | `best_model.dvc` |
+| Artifact                           | Path               | Tracked by            |
+| ---------------------------------- | ------------------ | --------------------- |
+| Dataset (Sib200, Russian)          | `data/sib200_rus/` | `data/sib200_rus.dvc` |
+| Best fine-tuned model (in process) | `best_model/`      | `best_model.dvc`      |
 
 ### Bootstrapping the DVC cache for the first time
 
@@ -154,7 +154,6 @@ data/
 .dvc/
 └── config            # DVC remote configuration (git)
 ```
-
 
 ## License
 

@@ -1,6 +1,9 @@
 """CLI entrypoint."""
 
 import json
+import subprocess
+import sys
+from pathlib import Path
 
 import click
 
@@ -8,10 +11,6 @@ from rubert_classifier.config import Config
 from rubert_classifier.data import dvc_pull
 from rubert_classifier.inference import Predictor
 from rubert_classifier.train import train_model
-
-import subprocess
-import sys
-from pathlib import Path
 
 
 @click.group()
@@ -77,14 +76,12 @@ def ensure_data_available():
         return
 
     click.echo("[DVC] Data not found, pulling...")
-    result = subprocess.run(
-        [sys.executable, "-m", "dvc", "pull"],
-        capture_output=True, text=True
-    )
+    result = subprocess.run([sys.executable, "-m", "dvc", "pull"], capture_output=True, text=True)
     if result.returncode != 0:
         click.echo(f"[DVC] Pull failed: {result.stderr}", err=True)
         raise click.Abort()
     click.echo("[DVC] Data ready.")
+
 
 if __name__ == "__main__":
     main()

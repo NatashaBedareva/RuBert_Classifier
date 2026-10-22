@@ -16,7 +16,7 @@ from transformers import (
 )
 
 from rubert_classifier.config import Config
-from rubert_classifier.data import get_training_datasets   # ← единственный импорт данных
+from rubert_classifier.data import get_training_datasets
 from rubert_classifier.model import create_model
 
 
