@@ -12,7 +12,6 @@ env/
 .coverage
 htmlcov/
 output/
-best_model/
 logs/
 *.png
 !docs/*.png
@@ -20,3 +19,5 @@ logs/
 .idea/
 .vscode/
 input.txt
+best_model20261019/
+/best_model
