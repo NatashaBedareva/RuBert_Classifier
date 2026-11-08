@@ -1,0 +1,4 @@
+name: DeepPavlov/rubert-base-cased   # заменить на другое имя модели
+num_labels: null
+ignore_mismatched_sizes: true
+device: auto
