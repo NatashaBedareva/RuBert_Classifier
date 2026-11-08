@@ -153,8 +153,42 @@ data/
 
 .dvc/
 └── config            # DVC remote configuration (git)
+
+configs/
+├── config.yaml       # root: defaults + global fields
+├── data/sib200.yaml  # dataset, splits, columns, DVC
+├── preprocessing/default.yaml # balancing, tokenization
+├── model/rubert.yaml # model name, device
+├── training/
+│ ├── default.yaml    # default training params
+│ ├── quick.yaml      # fast smoke-test preset
+│ └── full.yaml       # full training preset
+├── evaluation/default.yaml # metrics, confusion matrix
+├── inference/default.yaml # max_length, confidence threshold
+└── serving/local.yaml # (reserved for serving)
+
+run_train.py # Hydra entry point for training
+run_predict.py # Hydra entry point for inference
 ```
 
+
+
+### Hydra entry points
+
+```bash
+# Training
+uv run python run_train.py
+uv run python run_train.py training=quick
+uv run python run_train.py training=full
+uv run python run_train.py training.num_train_epochs=1
+uv run python run_train.py --cfg job          # inspect the composed config
+uv run python run_train.py -m training=quick,full
+uv run python run_train.py -m training=quick training.learning_rate=1e-5,3e-5,5e-5
+
+# Inference
+uv run python run_predict.py
+uv run python run_predict.py inference.max_length=128
+```
 ## License
 
 MIT
