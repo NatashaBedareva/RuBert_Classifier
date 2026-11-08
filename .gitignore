@@ -23,3 +23,5 @@ best_model20261019/
 /best_model
 .venv/
 .backup/
+outputs/
+multirun/
