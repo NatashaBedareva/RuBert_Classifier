@@ -34,7 +34,7 @@ def _seed_everything(seed: int) -> None:
         torch.cuda.manual_seed_all(seed)
 
 
-def build_compute_metrics(id2label: dict):
+def build_compute_metrics(cfg: Config):
     """Build the compute_metrics callable."""
 
     def compute_metrics(eval_pred):
@@ -54,6 +54,13 @@ def build_compute_metrics(id2label: dict):
     return compute_metrics
 
 
+def _resolve_fp16(value) -> bool:
+    """Resolve 'auto' | true | false into a bool."""
+    if isinstance(value, str) and value.lower() == "auto":
+        return torch.cuda.is_available()
+    return bool(value)
+
+
 def train_model(cfg: Optional[Config] = None) -> Trainer:
     """Full training pipeline."""
     if cfg is None:
@@ -61,45 +68,48 @@ def train_model(cfg: Optional[Config] = None) -> Trainer:
 
     _seed_everything(cfg.seed)
 
-    # Preprocessing is inside of get_training_datasets()
     tokenized_train, tokenized_val, tokenized_test, tokenizer = get_training_datasets(cfg)
 
     model = create_model(cfg)
 
+    t = cfg.training
     training_args = TrainingArguments(
         output_dir=cfg.output_dir,
-        learning_rate=cfg.learning_rate,
-        per_device_train_batch_size=cfg.per_device_train_batch_size,
-        per_device_eval_batch_size=cfg.per_device_eval_batch_size,
-        num_train_epochs=cfg.num_train_epochs,
-        weight_decay=cfg.weight_decay,
-        warmup_steps=cfg.warmup_ratio,
-        eval_strategy="epoch",
-        save_strategy="epoch",
-        load_best_model_at_end=True,
-        metric_for_best_model=cfg.metric_for_best_model,
-        greater_is_better=True,
-        optim="adamw_torch",
-        lr_scheduler_type="cosine_with_restarts",
-        gradient_accumulation_steps=cfg.gradient_accumulation_steps,
-        save_total_limit=cfg.save_total_limit,
-        logging_steps=cfg.logging_steps,
+        learning_rate=t.learning_rate,
+        per_device_train_batch_size=t.per_device_train_batch_size,
+        per_device_eval_batch_size=t.per_device_eval_batch_size,
+        num_train_epochs=t.num_train_epochs,
+        weight_decay=t.weight_decay,
+        warmup_steps=t.warmup_ratio,           
+        eval_strategy=t.strategy["eval"],
+        save_strategy=t.strategy["save"],
+        load_best_model_at_end=t.strategy["load_best_model_at_end"],
+        metric_for_best_model=t.strategy["metric_for_best_model"],
+        greater_is_better=t.strategy["greater_is_better"],
+        optim=t.optimizer,
+        lr_scheduler_type=t.scheduler,
+        gradient_accumulation_steps=t.gradient_accumulation_steps,
+        save_total_limit=t.save_total_limit,
+        logging_steps=t.logging_steps,
         logging_strategy="steps",
-        fp16=torch.cuda.is_available(),
-        dataloader_num_workers=2,
+        fp16=_resolve_fp16(t.fp16),
+        dataloader_num_workers=t.dataloader_num_workers,
         report_to="none",
         seed=cfg.seed,
-        label_smoothing_factor=cfg.label_smoothing_factor,
-        max_grad_norm=cfg.max_grad_norm,
+        label_smoothing_factor=t.label_smoothing_factor,
+        max_grad_norm=t.max_grad_norm,
     )
 
     data_collator = DataCollatorWithPadding(
-        tokenizer=tokenizer, padding=True, max_length=cfg.max_length, pad_to_multiple_of=8
+        tokenizer=tokenizer,
+        padding=True,
+        max_length=cfg.preprocessing.max_length,
+        pad_to_multiple_of=cfg.preprocessing.tokenization["pad_to_multiple_of"],
     )
 
     early_stopping = EarlyStoppingCallback(
-        early_stopping_patience=cfg.early_stopping_patience,
-        early_stopping_threshold=cfg.early_stopping_threshold,
+        early_stopping_patience=t.early_stopping["patience"],
+        early_stopping_threshold=t.early_stopping["threshold"],
     )
 
     trainer = Trainer(
@@ -109,7 +119,7 @@ def train_model(cfg: Optional[Config] = None) -> Trainer:
         eval_dataset=tokenized_val,
         processing_class=tokenizer,
         data_collator=data_collator,
-        compute_metrics=build_compute_metrics(cfg.id2label),
+        compute_metrics=build_compute_metrics(cfg),
         callbacks=[early_stopping, LoggingCallback()],
     )
 
@@ -118,7 +128,6 @@ def train_model(cfg: Optional[Config] = None) -> Trainer:
     print(f"Training done in {train_results.metrics['train_runtime']:.2f}s")
     print(f"Final training loss: {train_results.training_loss:.4f}")
 
-    # Save best model + config
     Path(cfg.best_model_dir).mkdir(parents=True, exist_ok=True)
     trainer.save_model(cfg.best_model_dir)
     tokenizer.save_pretrained(cfg.best_model_dir)

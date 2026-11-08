@@ -1,0 +1,10 @@
+target_samples_per_class: 120
+max_length: 256
+tokenization:
+  truncation: true
+  padding: max_length
+  add_special_tokens: true
+  pad_to_multiple_of: 8
+balancing:
+  strategy: oversampling
+  seed: 42

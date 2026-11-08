@@ -1,0 +1,13 @@
+metrics:
+  - accuracy
+  - f1_macro
+  - f1_weighted
+f1_average: macro
+classification_report_digits: 4
+top_errors: 10
+confusion_matrix:
+  enabled: true
+  path: ./output/confusion_matrix.png
+  figsize: [10, 8]
+  dpi: 300
+  cmap: Blues

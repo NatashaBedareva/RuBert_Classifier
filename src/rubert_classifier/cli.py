@@ -1,8 +1,6 @@
 """CLI entrypoint."""
 
 import json
-import subprocess
-import sys
 from pathlib import Path
 
 import click
@@ -28,9 +26,8 @@ def train(config_path, output_dir, best_model_dir, epochs):
     cfg = Config.load(config_path) if config_path else Config()
     cfg.output_dir = output_dir
     cfg.best_model_dir = best_model_dir
-    cfg.num_train_epochs = epochs
+    cfg.training.num_train_epochs = epochs   # [FIX] nested field
 
-    # DVC pull happens inside get_training_datasets -> _load_sib200_dataset
     train_model(cfg)
     click.echo("Training complete.")
 
@@ -41,10 +38,10 @@ def train(config_path, output_dir, best_model_dir, epochs):
 @click.option("--file", "file_path", default=None, type=click.Path(exists=True))
 def predict(model_dir, text, file_path):
     """Run inference."""
-    # Pull DVC-tracked artifacts
     dvc_pull()
 
-    predictor = Predictor(model_dir)
+    cfg = Config()
+    predictor = Predictor(model_dir, inference_cfg=cfg.inference)  # [FIX]
 
     if text:
         results = predictor.predict(text)
@@ -56,7 +53,6 @@ def predict(model_dir, text, file_path):
         for r in results:
             click.echo(f"[{r['label']}] ({r['confidence']:.3f}) {r['text']}")
     else:
-        # Interactive
         click.echo("Enter text (Ctrl+C to exit):")
         try:
             while True:
@@ -71,14 +67,12 @@ def predict(model_dir, text, file_path):
 
 def ensure_data_available():
     """Ensure DVC-tracked data is pulled locally before training/inference."""
-    marker = Path("data/sib200_rus")
+    marker = Path(Config().data.local_path)   # [FIX] path from config
     if marker.exists():
         return
-
     click.echo("[DVC] Data not found, pulling...")
-    result = subprocess.run([sys.executable, "-m", "dvc", "pull"], capture_output=True, text=True)
-    if result.returncode != 0:
-        click.echo(f"[DVC] Pull failed: {result.stderr}", err=True)
+    if not dvc_pull():
+        click.echo("[DVC] Pull failed.", err=True)
         raise click.Abort()
     click.echo("[DVC] Data ready.")
 

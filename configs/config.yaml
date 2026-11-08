@@ -1,0 +1,14 @@
+defaults:
+  - base_config
+  - data: sib200
+  - preprocessing: default
+  - model: rubert
+  - training: default
+  - evaluation: default
+  - inference: default
+  - _self_
+
+seed: 42
+output_dir: ./output
+best_model_dir: ./best_model
+logs_dir: ./logs

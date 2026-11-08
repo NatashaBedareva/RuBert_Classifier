@@ -21,8 +21,8 @@ def balance_dataset(
     dataset: Dataset,
     label2id: dict,
     list_of_categories: list,
-    target_samples_per_class: int = 150,
-    seed: int = 42,
+    target_samples_per_class: int,
+    seed: int,
 ) -> Dataset:
     """Balance the dataset with oversampling of minority classes."""
     random.seed(seed)
@@ -72,7 +72,7 @@ def balance_dataset(
 
 def build_tokenizer(cfg: Config) -> PreTrainedTokenizer:
     """Load the tokenizer."""
-    return AutoTokenizer.from_pretrained(cfg.model_name)
+    return AutoTokenizer.from_pretrained(cfg.model.name)
 
 
 def tokenize_dataset(
@@ -82,14 +82,15 @@ def tokenize_dataset(
     add_labels: bool = True,
 ) -> Dataset:
     """Tokenize a dataset."""
+    tok = cfg.preprocessing.tokenization
 
     def tokenize_function(examples):
         return tokenizer(
             examples["text"],
-            truncation=True,
-            padding=True,
-            max_length=cfg.max_length,
-            add_special_tokens=True,
+            truncation=tok["truncation"],
+            padding=tok["padding"],
+            max_length=cfg.preprocessing.max_length,
+            add_special_tokens=tok["add_special_tokens"],
         )
 
     tokenized = dataset.map(tokenize_function, batched=True)
@@ -110,16 +111,16 @@ def prepare_datasets(
         tokenizer = build_tokenizer(cfg)
 
     balanced_train = balance_dataset(
-        raw["train"],
+        raw[cfg.data.splits["train"]],
         cfg.label2id,
         cfg.list_of_categories,
-        target_samples_per_class=cfg.target_samples_per_class,
-        seed=cfg.seed,
+        target_samples_per_class=cfg.preprocessing.target_samples_per_class,
+        seed=cfg.preprocessing.balancing["seed"],
     )
 
     tokenized_train = tokenize_dataset(balanced_train, tokenizer, cfg)
-    tokenized_val = tokenize_dataset(raw["validation"], tokenizer, cfg)
-    tokenized_test = tokenize_dataset(raw["test"], tokenizer, cfg)
+    tokenized_val = tokenize_dataset(raw[cfg.data.splits["validation"]], tokenizer, cfg)
+    tokenized_test = tokenize_dataset(raw[cfg.data.splits["test"]], tokenizer, cfg)
 
     print(
         f"\nTokenized sizes -> train: {len(tokenized_train)}, "

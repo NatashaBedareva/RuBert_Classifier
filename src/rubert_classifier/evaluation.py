@@ -1,7 +1,7 @@
 """Evaluation and error analysis."""
 
 from pathlib import Path
-from typing import List
+from typing import List, Optional
 
 import matplotlib
 
@@ -12,19 +12,27 @@ import numpy as np
 import seaborn as sns
 from sklearn.metrics import classification_report, confusion_matrix, f1_score
 
+from rubert_classifier.config import EvaluationConfig
+
 
 def evaluate_predictions(
     true_labels: List[int],
     pred_labels: List[int],
     list_of_categories: List[str],
+    cfg: Optional[EvaluationConfig] = None,
 ) -> dict:
     """Compute detailed metrics."""
+    cfg = cfg or EvaluationConfig()
+
     f1_macro = f1_score(true_labels, pred_labels, average="macro")
     f1_weighted = f1_score(true_labels, pred_labels, average="weighted")
     accuracy = float(np.mean(np.asarray(true_labels) == np.asarray(pred_labels)))
 
     report = classification_report(
-        true_labels, pred_labels, target_names=list_of_categories, digits=4
+        true_labels,
+        pred_labels,
+        target_names=list_of_categories,
+        digits=cfg.classification_report_digits,
     )
 
     print(f"\nMacro F1:    {f1_macro:.4f}")
@@ -47,10 +55,12 @@ def analyze_errors(
     test_texts: List[str],
     list_of_categories: List[str],
     id2label: dict,
-    top_errors: int = 10,
-    save_path: str = "confusion_matrix.png",
+    cfg: Optional[EvaluationConfig] = None,
 ):
     """Detailed error analysis + confusion matrix."""
+    cfg = cfg or EvaluationConfig()
+    cm_cfg = cfg.confusion_matrix
+
     cm = confusion_matrix(true_labels, pred_labels)
 
     errors = []
@@ -73,31 +83,33 @@ def analyze_errors(
     for et, count in sorted(error_types.items(), key=lambda x: x[1], reverse=True)[:5]:
         print(f"  {et}: {count}")
 
-    print(f"\nSample errors ({min(top_errors, len(errors))}):")
-    for i, e in enumerate(errors[:top_errors]):
+    print(f"\nSample errors ({min(cfg.top_errors, len(errors))}):")
+    for i, e in enumerate(errors[: cfg.top_errors]):
         preview = e["text"][:200] + "..." if len(e["text"]) > 200 else e["text"]
         print(f"\n{i+1}. TRUE: {e['true']}, PRED: {e['pred']}")
         print(f"   {preview}")
 
-    try:
-        plt.figure(figsize=(10, 8))
-        sns.heatmap(
-            cm,
-            annot=True,
-            fmt="d",
-            cmap="Blues",
-            xticklabels=list_of_categories,
-            yticklabels=list_of_categories,
-        )
-        plt.title("Confusion Matrix")
-        plt.ylabel("True")
-        plt.xlabel("Predicted")
-        plt.tight_layout()
-        Path(save_path).parent.mkdir(parents=True, exist_ok=True)
-        plt.savefig(save_path, dpi=300, bbox_inches="tight")
-        plt.close()
-        print(f"\nConfusion matrix saved to {save_path}")
-    except Exception as exc:  # pragma: no cover
-        print(f"Could not save confusion matrix: {exc}")
+    if cm_cfg.get("enabled", True):
+        try:
+            plt.figure(figsize=tuple(cm_cfg["figsize"]))
+            sns.heatmap(
+                cm,
+                annot=True,
+                fmt="d",
+                cmap=cm_cfg["cmap"],
+                xticklabels=list_of_categories,
+                yticklabels=list_of_categories,
+            )
+            plt.title("Confusion Matrix")
+            plt.ylabel("True")
+            plt.xlabel("Predicted")
+            plt.tight_layout()
+            save_path = cm_cfg["path"]
+            Path(save_path).parent.mkdir(parents=True, exist_ok=True)
+            plt.savefig(save_path, dpi=cm_cfg["dpi"], bbox_inches="tight")
+            plt.close()
+            print(f"\nConfusion matrix saved to {save_path}")
+        except Exception as exc:  # pragma: no cover
+            print(f"Could not save confusion matrix: {exc}")
 
     return errors, cm
