@@ -18,6 +18,16 @@ Text classification on the [Davlan/sib200](https://huggingface.co/datasets/Davla
 
 Requires [uv](https://docs.astral.sh/uv/getting-started/installation/).
 
+### Installing `uv`
+
+`uv` is the package manager used by every target in the `Makefile`. Install it first — otherwise `make install` will fail with `CreateProcess(NULL, uv sync, ...) failed / make (e=2)`.
+
+```bash
+pip install uv
+```
+
+### Cloning & installing dependencies
+
 ```bash
 git clone https://github.com/NatashaBedareva/RuBert_Classifier.git
 cd RuBert_Classifier
@@ -135,6 +145,11 @@ git commit -m "model: track best_model with DVC"
 ```bash
 # Hydra multirun over three LRs; each run writes to its own best_model dir
 make sweep
+
+# Equivalent, with explicit args
+uv run python run_train.py -m training=quick preprocessing.target_samples_per_class=10 \
+  training.learning_rate=1e-5,3e-5,5e-5 \
+  best_model_dir=./best_models/lr_${training.learning_rate}
 ```
 
 ## Inference
