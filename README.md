@@ -171,8 +171,6 @@ run_train.py # Hydra entry point for training
 run_predict.py # Hydra entry point for inference
 ```
 
-
-
 ### Hydra entry points
 
 ```bash
@@ -189,6 +187,7 @@ uv run python run_train.py -m training=quick training.learning_rate=1e-5,3e-5,5e
 uv run python run_predict.py
 uv run python run_predict.py inference.max_length=128
 ```
+
 ## License
 
 MIT

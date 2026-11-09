@@ -26,7 +26,7 @@ def train(config_path, output_dir, best_model_dir, epochs):
     cfg = Config.load(config_path) if config_path else Config()
     cfg.output_dir = output_dir
     cfg.best_model_dir = best_model_dir
-    cfg.training.num_train_epochs = epochs   # [FIX] nested field
+    cfg.training.num_train_epochs = epochs  # [FIX] nested field
 
     train_model(cfg)
     click.echo("Training complete.")
@@ -67,7 +67,7 @@ def predict(model_dir, text, file_path):
 
 def ensure_data_available():
     """Ensure DVC-tracked data is pulled locally before training/inference."""
-    marker = Path(Config().data.local_path)   # [FIX] path from config
+    marker = Path(Config().data.local_path)  # [FIX] path from config
     if marker.exists():
         return
     click.echo("[DVC] Data not found, pulling...")

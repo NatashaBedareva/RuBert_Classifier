@@ -19,9 +19,7 @@ class DataConfig:
     splits: Dict[str, str] = field(
         default_factory=lambda: {"train": "train", "validation": "validation", "test": "test"}
     )
-    columns: Dict[str, str] = field(
-        default_factory=lambda: {"text": "text", "label": "category"}
-    )
+    columns: Dict[str, str] = field(default_factory=lambda: {"text": "text", "label": "category"})
     dvc: Dict[str, Any] = field(
         default_factory=lambda: {"enabled": True, "remote": "local_storage"}
     )
