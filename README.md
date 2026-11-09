@@ -6,6 +6,7 @@ Text classification on the [Davlan/sib200](https://huggingface.co/datasets/Davla
 
 - 📦 Installable Python package
 - ⚡ Fast dependency management with [uv](https://docs.astral.sh/uv/)
+- 🛠️ `Makefile` shortcuts for every workflow (install / train / predict / test / sweep)
 - 🚀 CLI for training and inference
 - 🗂️ Data & model versioning with [DVC](https://dvc.org/)
 - ⚖️ Automatic class balancing (oversampling)
@@ -15,18 +16,37 @@ Text classification on the [Davlan/sib200](https://huggingface.co/datasets/Davla
 
 ## Installation
 
+Requires [uv](https://docs.astral.sh/uv/getting-started/installation/).
+
 ```bash
 git clone https://github.com/NatashaBedareva/RuBert_Classifier.git
 cd RuBert_Classifier
 
-python -m venv .venv
-source .venv/bin/activate    # Linux/macOS
-# or: .venv\Scripts\activate # Windows
-
-pip install -e ".[dev]"
-pre-commit install
-pre-commit run -a
+# Runtime + dev dependencies + pre-commit hooks
+make install-dev
 ```
+
+`make install` installs only runtime dependencies (no dev tools, no hooks).
+
+## Makefile commands
+
+All common workflows are wrapped in `make` targets:
+
+| Target             | Description                                                 |
+| ------------------ | ----------------------------------------------------------- |
+| `make install`     | Install runtime dependencies (`uv sync`)                    |
+| `make install-dev` | Install runtime + dev deps and pre-commit hooks             |
+| `make test`        | Run `pytest tests/ -v`                                      |
+| `make lint`        | `flake8` + `mypy`                                           |
+| `make format`      | `black` + `isort`                                           |
+| `make train`       | Train with default Hydra config                             |
+| `make train-quick` | Fast smoke-test preset (`training=quick`, 10 samples/class) |
+| `make train-full`  | Full training preset                                        |
+| `make predict`     | Inference via Hydra entry point (`run_predict.py`)          |
+| `make predict-cli` | Inference via `rubert-clf` CLI (interactive mode)           |
+| `make sweep`       | Hydra multirun learning-rate sweep                          |
+| `make clean`       | Remove caches and build artifacts                           |
+| `make help`        | List available targets                                      |
 
 ## Data management with DVC
 
@@ -65,7 +85,7 @@ git add data/sib200_rus.dvc data/.gitignore
 git commit -m "data: track sib200 local copy with DVC"
 ```
 
-After this, every fresh clone gets the exact same data via `dvc pull` (or automatically via the CLI).
+After this, every fresh clone gets the exact same data via `dvc pull` (or automatically via the CLI / `make` targets).
 
 ### How it plugs into the code
 
@@ -78,8 +98,18 @@ After this, every fresh clone gets the exact same data via `dvc pull` (or automa
 ## Training
 
 ```bash
-# Using CLI
-rubert-clf train --output-dir ./output --best-model-dir ./best_model --epochs 20
+# Default preset
+make train
+
+# Quick smoke-test preset (few samples per class)
+make train-quick
+
+# Full preset
+make train-full
+
+# Fine-grained Hydra overrides
+uv run python run_train.py training.num_train_epochs=1
+uv run python run_train.py --cfg job      # inspect the composed config
 ```
 
 Or from Python:
@@ -100,19 +130,33 @@ git add best_model.dvc best_model/.gitignore
 git commit -m "model: track best_model with DVC"
 ```
 
+### Learning-rate sweep
+
+```bash
+# Hydra multirun over three LRs; each run writes to its own best_model dir
+make sweep
+```
+
 ## Inference
 
-### CLI
+### Via Makefile
+
+```bash
+make predict       # Hydra entry point (run_predict.py)
+make predict-cli   # rubert-clf predict --model-dir ./best_model (interactive)
+```
+
+### Via CLI directly
 
 ```bash
 # Single text
-rubert-clf predict --model-dir ./best_model --text "Ваш текст здесь"
+uv run rubert-clf predict --model-dir ./best_model --text "Ваш текст здесь"
 
 # Batch from file (one text per line)
-rubert-clf predict --model-dir ./best_model --file input.txt
+uv run rubert-clf predict --model-dir ./best_model --file input.txt
 
 # Interactive mode
-rubert-clf predict --model-dir ./best_model
+uv run rubert-clf predict --model-dir ./best_model
 ```
 
 ### Python API
@@ -127,15 +171,38 @@ results = predictor.predict("Это тестовый текст")
 print(results[0]["label"], results[0]["confidence"])
 ```
 
-## Testing
+## Testing & code quality
 
 ```bash
-pytest tests/ -v
+make test     # pytest tests/ -v
+make lint     # flake8 + mypy
+make format   # black + isort
+make clean    # drop caches and build artifacts
+```
+
+## Hydra entry points
+
+The `Makefile` targets above are thin wrappers around the Hydra scripts; the raw commands remain available for experimentation:
+
+```bash
+# Training
+uv run python run_train.py
+uv run python run_train.py training=quick
+uv run python run_train.py training=full
+uv run python run_train.py training.num_train_epochs=1
+uv run python run_train.py --cfg job          # inspect the composed config
+uv run python run_train.py -m training=quick,full
+
+# Inference
+uv run python run_predict.py
+uv run python run_predict.py inference.max_length=128
 ```
 
 ## Project structure
 
 ```
+Makefile                # install / train / predict / sweep / clean shortcuts
+
 src/rubert_classifier/
 ├── config.py         # Configuration dataclass
 ├── data.py           # DVC pull + dataset loading (the ONLY place touching DVC/data)
@@ -169,23 +236,6 @@ configs/
 
 run_train.py # Hydra entry point for training
 run_predict.py # Hydra entry point for inference
-```
-
-### Hydra entry points
-
-```bash
-# Training
-uv run python run_train.py
-uv run python run_train.py training=quick
-uv run python run_train.py training=full
-uv run python run_train.py training.num_train_epochs=1
-uv run python run_train.py --cfg job          # inspect the composed config
-uv run python run_train.py -m training=quick,full
-uv run python run_train.py -m training=quick training.learning_rate=1e-5,3e-5,5e-5
-
-# Inference
-uv run python run_predict.py
-uv run python run_predict.py inference.max_length=128
 ```
 
 ## License
