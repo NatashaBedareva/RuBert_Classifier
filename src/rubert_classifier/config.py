@@ -17,11 +17,23 @@ class DataConfig:
     dataset_language: str = "rus_Cyrl"
     local_path: str = "data/sib200_rus"
     splits: Dict[str, str] = field(
-        default_factory=lambda: {"train": "train", "validation": "validation", "test": "test"}
+        default_factory=lambda: {
+            "train": "train",
+            "validation": "validation",
+            "test": "test",
+        }
     )
-    columns: Dict[str, str] = field(default_factory=lambda: {"text": "text", "label": "category"})
+    columns: Dict[str, str] = field(
+        default_factory=lambda: {
+            "text": "text",
+            "label": "category",
+        }
+    )
     dvc: Dict[str, Any] = field(
-        default_factory=lambda: {"enabled": True, "remote": "local_storage"}
+        default_factory=lambda: {
+            "enabled": True,
+            "remote": "local_storage",
+        }
     )
 
 
@@ -38,7 +50,10 @@ class PreprocessingConfig:
         }
     )
     balancing: Dict[str, Any] = field(
-        default_factory=lambda: {"strategy": "oversampling", "seed": 42}
+        default_factory=lambda: {
+            "strategy": "oversampling",
+            "seed": 42,
+        }
     )
 
 
@@ -77,13 +92,22 @@ class TrainingConfig:
         }
     )
     early_stopping: Dict[str, Any] = field(
-        default_factory=lambda: {"patience": 4, "threshold": 0.001}
+        default_factory=lambda: {
+            "patience": 4,
+            "threshold": 0.001,
+        }
     )
 
 
 @dataclass
 class EvaluationConfig:
-    metrics: List[str] = field(default_factory=lambda: ["accuracy", "f1_macro", "f1_weighted"])
+    metrics: List[str] = field(
+        default_factory=lambda: [
+            "accuracy",
+            "f1_macro",
+            "f1_weighted",
+        ]
+    )
     f1_average: str = "macro"
     classification_report_digits: int = 4
     top_errors: int = 10
@@ -106,24 +130,45 @@ class InferenceConfig:
     output_format: str = "json"
 
 
+@dataclass
+class MLflowConfig:
+    enabled: bool = True
+    tracking_uri: str = "http://127.0.0.1:8080"
+    experiment_name: str = "RuBert_Classifier"
+    run_name: str = "rubert_training"
+    plots_dir: str = "plots"
+
+
 def _from_dict(cls, data):
     """Recursively convert dict -> dataclass for nested configs."""
     if not is_dataclass(cls):
         return data
+
     kwargs = {}
+
     try:
         type_hints = typing.get_type_hints(cls)
     except Exception:
         type_hints = {}
-    for f in fields(cls):
-        if f.name not in data:
+
+    for config_field in fields(cls):
+        if config_field.name not in data:
             continue
-        value = data[f.name]
-        field_type = type_hints.get(f.name, f.type)
+
+        value = data[config_field.name]
+        field_type = type_hints.get(
+            config_field.name,
+            config_field.type,
+        )
+
         if is_dataclass(field_type) and isinstance(value, dict):
-            kwargs[f.name] = _from_dict(field_type, value)
+            kwargs[config_field.name] = _from_dict(
+                field_type,
+                value,
+            )
         else:
-            kwargs[f.name] = value
+            kwargs[config_field.name] = value
+
     return cls(**kwargs)
 
 
@@ -132,12 +177,14 @@ class Config:
     """Main configuration for training and inference."""
 
     defaults: List[Any] = field(default_factory=list)
+
     data: DataConfig = field(default_factory=DataConfig)
     preprocessing: PreprocessingConfig = field(default_factory=PreprocessingConfig)
     model: ModelConfig = field(default_factory=ModelConfig)
     training: TrainingConfig = field(default_factory=TrainingConfig)
     evaluation: EvaluationConfig = field(default_factory=EvaluationConfig)
     inference: InferenceConfig = field(default_factory=InferenceConfig)
+    mlflow: MLflowConfig = field(default_factory=MLflowConfig)
 
     seed: int = 42
     output_dir: str = "./output"
@@ -150,29 +197,47 @@ class Config:
     label2id: Dict[str, int] = field(default_factory=dict)
 
     def save(self, path: str) -> None:
-        Path(path).parent.mkdir(parents=True, exist_ok=True)
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(asdict(self), f, indent=2, ensure_ascii=False)
+        Path(path).parent.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+        with open(path, "w", encoding="utf-8") as file:
+            json.dump(
+                asdict(self),
+                file,
+                indent=2,
+                ensure_ascii=False,
+            )
 
     @classmethod
     def load(cls, path: str) -> "Config":
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
+        with open(path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+
         return _from_dict(cls, data)
 
     @classmethod
     def from_yaml(cls, path: str) -> "Config":
-        with open(path, "r", encoding="utf-8") as f:
-            data = yaml.safe_load(f)
+        with open(path, "r", encoding="utf-8") as file:
+            data = yaml.safe_load(file)
+
         return _from_dict(cls, data)
 
     @classmethod
     def from_hydra(cls, cfg: DictConfig) -> "Config":
         """Convert a Hydra DictConfig into a plain Config instance."""
-        plain = OmegaConf.to_container(cfg, resolve=True)
+        plain = OmegaConf.to_container(
+            cfg,
+            resolve=True,
+        )
         plain.pop("_self_", None)
         plain.pop("defaults", None)
+
         return _from_dict(cls, plain)
 
 
-ConfigStore.instance().store(name="base_config", node=Config)
+ConfigStore.instance().store(
+    name="base_config",
+    node=Config,
+)

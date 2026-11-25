@@ -25,3 +25,9 @@ best_model20261019/
 .backup/
 outputs/
 multirun/
+
+/mlartifacts/
+/mlflow.db
+/mlflow.db-shm
+/mlflow.db-wal
+/mlruns/

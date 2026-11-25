@@ -6,6 +6,7 @@ defaults:
   - training: default
   - evaluation: default
   - inference: default
+  - mlflow: default
   - _self_
 
 seed: 42
