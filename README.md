@@ -108,6 +108,9 @@ After this, every fresh clone gets the exact same data via `dvc pull` (or automa
 ## Training
 
 ```bash
+# launching the mlflow server
+make start-server-mlflow
+
 # Default preset
 make train
 

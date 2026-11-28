@@ -20,6 +20,8 @@ format:
 	uv run black src/ tests/ run_train.py run_predict.py
 	uv run isort src/ tests/ run_train.py run_predict.py
 
+start-server-mlflow:
+	mlflow server --host 127.0.0.1 --port 8080
 # --- Обучение ---
 train:
 	uv run python run_train.py
